@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 const Home = lazy(() => import('./pages/Home'));
-const Ielts = lazy(() => import('./pages/Ielts'));
+const Ielts = lazy(() => import('./pages/ielts'));
 const Pte = lazy(() => import('./pages/Pte'));
 const SpokenEnglish = lazy(() => import('./pages/SpokenEnglish'));
 const DigitalSkills = lazy(() => import('./pages/DigitalSkills'));
