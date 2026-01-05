@@ -1,15 +1,15 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
-import Navbar from '/src/components/Navbar';
-import Footer from '/src/components/Footer';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
-import Home from '/src/pages/Home';
-import Ielts from '/src/pages/Ielts';
-import Pte from '/src/pages/Pte';
-import SpokenEnglish from '/src/pages/SpokenEnglish';
-import DigitalSkills from '/src/pages/DigitalSkills';
-import Contact from '/src/pages/Contact';
+import Home from './pages/Home';
+import Ielts from './pages/Ielts';
+import Pte from './pages/Pte';
+import SpokenEnglish from './pages/SpokenEnglish';
+import DigitalSkills from './pages/DigitalSkills';
+import Contact from './pages/Contact';
 
 function App() {
   return (
