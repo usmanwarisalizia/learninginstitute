@@ -61,7 +61,7 @@ const Footer = () => {
 
     return (
         <footer className="bg-gradient-to-b from-gray-50 to-white text-gray-800 border-t border-gray-200">
-            <div className="container mx-auto px-4 py-8 md:py-12">
+            <div className="container mx-auto max-w-6xl px-2 py-12">
 
                 {/* Main Footer Content */}
                 <div className="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-10 mb-10">

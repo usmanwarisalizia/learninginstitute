@@ -52,7 +52,7 @@ const SpokenEnglish = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#c5eeed] via-white to-[#c5eeed] py-8 px-4">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
 
         {/* Header Section */}
         <div className="text-center mb-10">

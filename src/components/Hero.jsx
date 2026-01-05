@@ -123,7 +123,7 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-linear-to-t from-black/40 via-transparent to-transparent"></div>
             </div>
 
-            <div className="relative w-full max-w-7xl mx-auto">
+            <div className="relative w-full max-w-6xl mx-auto">
                 <div className="w-full flex flex-col lg:flex-row items-end gap-8 md:gap-12 lg:gap-16">
 
                     {/* Left side - Main Content */}
@@ -141,7 +141,7 @@ const Hero = () => {
                             {/* Main Heading */}
                             <h1
                                 ref={textRef}
-                                className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black leading-tight md:leading-none mb-6 md:mb-8"
+                                className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-black leading-tight md:leading-none mb-6 md:mb-8"
                             >
                                 <span className="block text-gray-50 mt-2 drop-shadow-lg opacity-0 animate-fadeIn">
                                     Hey!!
@@ -230,7 +230,7 @@ const Hero = () => {
                         </div>
 
                         {/* Desktop Vertical List Layout */}
-                        <div className="hidden lg:flex flex-col justify-center items-center lg:items-end lg:pr-8 xl:pr-12 space-y-6 md:space-y-8">
+                        <div className="hidden lg:flex flex-col justify-center items-center lg:items-end  space-y-6 md:space-y-8">
                             {skills.map((skill, index) => (
                                 <div
                                     key={index}

@@ -68,7 +68,7 @@ const OurCourses = () => {
 
     return (
         <div className="py-12 px-4 md:px-8 lg:px-16 bg-linear-to-b from-gray-50 to-white">
-            <div className="max-w-7xl mx-auto">
+            <div className="max-w-6xl mx-auto">
                 {/* Header */}
                 <div className="text-center mb-12">
                     <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
@@ -98,7 +98,7 @@ const OurCourses = () => {
 
                     <Swiper
                         modules={[Navigation, Autoplay]}
-                        spaceBetween={30}
+                        spaceBetween={15}
                         slidesPerView={1}
                         navigation={{
                             nextEl: '.swiper-button-next-custom',

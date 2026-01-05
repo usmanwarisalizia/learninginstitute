@@ -19,7 +19,8 @@ const Navbar = () => {
 
     return (
         <nav className="bg-linear-to-r from-[#c5eeed] via-white to-[#c5eeed] border-2 border-white shadow-xl sticky top-0 z-50 backdrop-blur-lg bg-opacity-95">
-            <div className="container mx-auto px-4">
+           <div className="mx-auto px-4 md:px-28">
+
                 {/* Main Navbar */}
                 <div className="flex justify-between items-center py-3 md:py-4">
 
