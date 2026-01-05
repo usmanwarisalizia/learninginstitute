@@ -1,8 +1,9 @@
 import React from 'react';
-import Hero from './src/components/Hero';
-import InteractiveVideo from './src/components/InteractiveVideo';
-import OurCourses from './src/components/OurCourses';
-import WhyUsComponent from './src/components/WhyUsComponent';
+
+import Hero from '../components/Hero';
+import InteractiveVideo from '../components/InteractiveVideo';
+import OurCourses from '../components/OurCourses';
+import WhyUsComponent from '../components/WhyUsComponent';
 
 const Home = () => {
   return (
@@ -13,6 +14,6 @@ const Home = () => {
       <WhyUsComponent />
     </>
   );
-}
+};
 
 export default Home;
