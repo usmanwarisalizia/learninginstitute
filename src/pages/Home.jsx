@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 
-import Hero from '../components/Hero';
-import InteractiveVideo from '../components/InteractiveVideo';
-import OurCourses from '../components/OurCourses';
-import WhyUsComponent from '../components/WhyUsComponent';
+const Hero = lazy(() => import('../components/Hero'));
+const InteractiveVideo = lazy(() => import('../components/InteractiveVideo'));
+const OurCourses = lazy(() => import('../components/OurCourses'));
+const WhyUsComponent = lazy(() => import('../components/WhyUsComponent'));
 
 const Home = () => {
   return (
-    <>
+    <Suspense fallback={<div>Loading...</div>}>
       <Hero />
       <InteractiveVideo />
       <OurCourses />
       <WhyUsComponent />
-    </>
+    </Suspense>
   );
 };
 
