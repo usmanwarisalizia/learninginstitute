@@ -2,6 +2,15 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay } from 'swiper/modules';
 import { FaArrowRight, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
+import Courseimg1 from "/src/assets/OurCourses/Courseimg1.jpg";
+import Courseimg2 from "/src/assets/OurCourses/Courseimg2.jpg";
+import Courseimg3 from "/src/assets/OurCourses/Courseimg3.jpg";
+import Courseimg4 from "/src/assets/OurCourses/Courseimg4.jpg";
+import Courseimg5 from "/src/assets/OurCourses/Courseimg5.jpg";
+import Courseimg6 from "/src/assets/OurCourses/Courseimg6.jpg";
+import Courseimg7 from "/src/assets/OurCourses/Courseimg7.jpg";
+import Courseimg8 from "/src/assets/OurCourses/Courseimg8.jpg";
+import Courseimg9 from "/src/assets/OurCourses/Courseimg9.jpg";
 
 // Import Swiper styles
 import 'swiper/css';
@@ -13,55 +22,55 @@ const OurCourses = () => {
         {
             id: 1,
             title: "IELTS",
-            image: "https://alearningsphere.com/assets/images/whatsapp-image-2024-11-11-at-3.43.49-pm-600x1067.jpg",
+            image: `${Courseimg1}`,
             description: "Master the IELTS with expert guidance, personalised lessons, and proven strategies to achieve your target score"
         },
         {
             id: 2,
             title: "PTE",
-            image: "https://alearningsphere.com/assets/images/12.platinum-pearson-400x377.png",
+            image: `${Courseimg2}`,
             description: "Prepare for PTE with tailored lessons, expert tips, and practice tests to boost your score."
         },
         {
             id: 3,
             title: "SPOKEN ENGLISH",
-            image: "https://alearningsphere.com/assets/images/download-1-275x183.png",
+            image: `${Courseimg3}`,
             description: "Improve your spoken English with practical lessons, fluency practice, and confidence-building activities."
         },
         {
             id: 4,
             title: "DIGITAL SKILLS",
-            image: "https://alearningsphere.com/assets/images/623ea04998b0002ff7f13ef2-learn-digital-skills-fast-1200x813.jpg",
+            image: `${Courseimg4}`,
             description: "Learn essential digital competencies including software proficiency, online collaboration, and digital literacy."
         },
         {
             id: 5,
             title: "DIGITAL MARKETING",
-            image: "https://alearningsphere.com/assets/images/download-1-300x168.jpg",
+            image: `${Courseimg5}`,
             description: "Mobirise is an easy website builder. Just drop site elements to your page, add content and style it to look the way you like."
         },
         {
             id: 6,
             title: "GRAPHIC DESIGNING",
-            image: "https://alearningsphere.com/assets/images/download-275x183.jpg",
+            image: `${Courseimg6}`,
             description: "Create stunning visual content using industry-standard tools and design principles for various media."
         },
         {
             id: 7,
             title: "VIDEO EDITING",
-            image: "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=400&h=300&fit=crop",
+            image: `${Courseimg7}`,
             description: "Learn professional video editing techniques, effects, and storytelling for engaging multimedia content."
         },
         {
             id: 8,
             title: "WRITING SKILLS",
-            image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400&h=300&fit=crop",
+            image: `${Courseimg8}`,
             description: "Enhance your writing abilities for professional, academic, and creative purposes with expert guidance."
         },
         {
             id: 9,
             title: "E-COMMERCE",
-            image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
+            image: `${Courseimg9}`,
             description: "Build and manage successful online stores with strategies for marketing, operations, and customer engagement."
         },
     ];

@@ -1,4 +1,5 @@
 import React from 'react';
+import IELTS from "/src/assets/IELTS/IELTS.jpg";
 
 const Ielts = () => {
     const features = [
@@ -52,7 +53,7 @@ const Ielts = () => {
                 <div className="mb-10">
                     <div className="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
                         <img
-                            src="https://alearningsphere.com/assets/images/whatsapp-image-2024-11-11-at-3.43.48-pm-2-1600x900.jpg"
+                            src={IELTS}
                             alt="IELTS Classes at Learning Sphere Institute"
                             className="w-full h-auto max-h-[500px] object-cover"
                         />

@@ -1,4 +1,5 @@
 import React from 'react';
+import  PTE from "/src/assets/PTE/PTE.png";
 
 const Pte = () => {
   const features = [
@@ -52,7 +53,7 @@ const Pte = () => {
         <div className="mb-10">
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
             <img
-              src="https://alearningsphere.com/assets/images/computerlab-1920x1080.png"
+              src={PTE}
               alt="PTE Computer Lab at Learning Sphere Institute"
               className="w-full h-auto max-h-[500px] object-cover"
             />

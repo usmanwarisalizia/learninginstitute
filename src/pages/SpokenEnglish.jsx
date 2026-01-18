@@ -1,4 +1,5 @@
 import React from 'react';
+import SPOKENENGLISH from '/src/assets/SPOKENENGLISH/SPOKENENGLISH.jpeg';
 
 const SpokenEnglish = () => {
   const learningPoints = [
@@ -69,7 +70,7 @@ const SpokenEnglish = () => {
         <div className="mb-10">
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
             <img
-              src="https://alearningsphere.com/assets/images/whatsapp-image-2024-11-11-at-3.43.46-pm-1600x900.jpeg"
+              src={SPOKENENGLISH}
               alt="Spoken English Class at Learning Sphere Institute"
               className="w-full h-auto max-h-[500px] object-cover"
             />

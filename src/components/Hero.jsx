@@ -7,7 +7,7 @@ import {
     FaBook,
     FaComments
 } from 'react-icons/fa';
-import heroimg from '/src/assets/heroimg.JPG';
+import heroimg from '/src/assets/HeroIMG/heroimg.JPG';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -91,18 +91,8 @@ const Hero = () => {
         });
     }, []);
 
-    // Calculate position for circle layout
-    const getCirclePosition = (index, total) => {
-        const radius = 120; // Base radius for mobile
-        const angle = (index / total) * 2 * Math.PI;
-        const x = Math.cos(angle) * radius;
-        const y = Math.sin(angle) * radius;
 
-        return {
-            left: `calc(50% + ${x}px)`,
-            top: `calc(50% + ${y}px)`,
-        };
-    };
+
 
     return (
         <section className="relative w-full  flex items-center justify-center overflow-hidden px-4 sm:px-6 lg:px-8 py-8 md:py-12 lg:py-20">
@@ -181,56 +171,11 @@ const Hero = () => {
                     {/* Right side - Skills in Circle Layout */}
                     <div className="w-full lg:w-1/2 h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-auto order-1 lg:order-2 relative z-10">
 
-                        {/* Mobile/Tablet Circle Layout */}
-                        <div className="lg:hidden relative w-full h-full flex items-center justify-center">
-                            <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 mx-auto">
-                                {skills.map((skill, index) => {
-                                    const position = getCirclePosition(index, skills.length);
-                                    return (
-                                        <div
-                                            key={index}
-                                            ref={el => skillTextsRef.current[index] = el}
-                                            className="absolute transform -translate-x-1/2 -translate-y-1/2"
-                                            style={position}
-                                        >
-                                            <div className={`group relative w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-linear-to-br ${skill.color} flex flex-col items-center justify-center p-4 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110`}>
 
-                                                {/* Icon */}
-                                                <div className="text-white mb-1">
-                                                    {skill.icon}
-                                                </div>
-
-                                                {/* Text */}
-                                                <span className="text-xs sm:text-sm font-bold text-white text-center leading-tight">
-                                                    {skill.text}
-                                                </span>
-
-                                                {/* Progress Ring */}
-                                                <div className="absolute -bottom-2 w-16 h-2">
-                                                    <div className="h-1 w-full bg-white/30 rounded-full overflow-hidden">
-                                                        <div
-                                                            className="h-full bg-white rounded-full"
-                                                            style={{ width: `${75 + (index * 5)}%` }}
-                                                        />
-                                                    </div>
-                                                    <div className="text-[10px] text-white/80 text-center mt-1">
-                                                        {75 + (index * 5)}%
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    );
-                                })}
-
-                                {/* Center Circle */}
-                                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-linear-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-md border border-white/10 flex items-center justify-center">
-                                    <span className="text-sm sm:text-base font-bold text-white text-center">SKILLS</span>
-                                </div>
-                            </div>
-                        </div>
 
                         {/* Desktop Vertical List Layout */}
-                        <div className="hidden lg:flex flex-col justify-center items-center lg:items-end  space-y-6 md:space-y-8">
+                        <div className="hidden lg:flex flex-col justify-center items-center lg:items-end space-y-6 md:space-y-8">
+                            {/* Desktop layout code remains the same */}
                             {skills.map((skill, index) => (
                                 <div
                                     key={index}
@@ -240,12 +185,12 @@ const Hero = () => {
                                     {/* Skill Card */}
                                     <div className="relative overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 p-6 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] hover:border-white/40">
 
-                                        {/* Animated background effect */}
-                                        <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/10 to-transparent  transition-transform duration-1000"></div>
+                                        {/* Animated background effect - FIXED: bg-linear-to-r to bg-gradient-to-r */}
+                                        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-1000"></div>
 
                                         <div className="relative flex items-center gap-4">
                                             {/* Icon */}
-                                            <div className={`shrink-0 w-14 h-14 rounded-xl bg-linear-to-br ${skill.color} flex items-center justify-center shadow-lg`}>
+                                            <div className={`shrink-0 w-14 h-14 rounded-xl bg-gradient-to-br ${skill.color} flex items-center justify-center shadow-lg`}>
                                                 <div className="text-white">
                                                     {skill.icon}
                                                 </div>
@@ -265,7 +210,7 @@ const Hero = () => {
                                         <div className="relative mt-4">
                                             <div className="h-1 w-full bg-white/20 rounded-full overflow-hidden">
                                                 <div
-                                                    className={`h-full bg-linear-to-r ${skill.color} rounded-full`}
+                                                    className={`h-full bg-gradient-to-r ${skill.color} rounded-full`}
                                                     style={{ width: `${75 + (index * 5)}%` }}
                                                 />
                                             </div>
@@ -278,7 +223,7 @@ const Hero = () => {
 
                                     {/* Connect line for desktop */}
                                     {index < skills.length - 1 && (
-                                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0.5 h-6 bg-linear-to-b from-white/30 to-transparent"></div>
+                                        <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0.5 h-6 bg-gradient-to-b from-white/30 to-transparent"></div>
                                     )}
                                 </div>
                             ))}
